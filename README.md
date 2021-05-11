@@ -31,7 +31,7 @@ $ roslaunch franka_coord give_goals.launch
 ### 2. Run the program on real robots (Franka Panda)
 
 Run the program on n (n>=2) Franka Panda robots
-- n computers (PC1, PC2, PC3, ...), each connect to a robot. PC 1 is set as the master. The coordinators and goal assignments are performed on PC1. The state reading and controllers are performed on each PC.
+- n computers (PC1, PC2, PC3, ...), each connect to a robot. PC 1 is set as the master. The coordinators and goal assignments are performed on PC1. The state reading and controller are performed on each PC.
 - modify coord_offline_all.cpp and coord_online_all.cpp, robot_num = n
 - modify the robot IP address in control_offline_rm_rx.cpp
 
