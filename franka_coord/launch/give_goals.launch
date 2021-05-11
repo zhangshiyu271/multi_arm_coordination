@@ -1,0 +1,89 @@
+<?xml version="1.0" ?>
+
+<launch>
+  <arg name="robot_num" default="4" />
+  <arg name="target" default="7" />
+  
+  <node name="give_goal_r1" pkg="franka_coord" type="give_goal_nr" output="screen">
+    <param name="robot_num" value="$(arg robot_num)" />  
+    <param name="robot_id" value="1" />  
+    <param name="speed_factor" value="0.05" />  
+    
+    <param name="q_goal_num" value="$(arg target)" /> 
+  </node>
+
+  <node name="give_goal_r2" pkg="franka_coord" type="give_goal_nr" output="screen">
+    <param name="robot_num" value="$(arg robot_num)" />
+    <param name="robot_id" value="2" />  
+    <param name="speed_factor" value="0.05" /> 
+    
+    <param name="q_goal_num" value="$(arg target)" /> 
+  </node>
+
+  <node name="give_goal_r3" pkg="franka_coord" type="give_goal_nr" output="screen">
+    <param name="robot_num" value="$(arg robot_num)" />
+    <param name="robot_id" value="3" />  
+    <param name="speed_factor" value="0.05" /> 
+    
+    <param name="q_goal_num" value="$(arg target)" /> 
+  </node> 
+
+  <node name="give_goal_r4" pkg="franka_coord" type="give_goal_nr" output="screen">
+    <param name="robot_num" value="$(arg robot_num)" />
+    <param name="robot_id" value="4" />  
+    <param name="speed_factor" value="0.05" /> 
+    
+    <param name="q_goal_num" value="$(arg target)" /> 
+  </node>
+
+  <!-- <node name="give_goal_r5" pkg="franka_coord" type="give_goal_nr" output="screen">
+    <param name="robot_num" value="$(arg robot_num)" />
+    <param name="robot_id" value="5" />  
+    <param name="speed_factor" value="0.05" /> 
+    
+    <param name="q_goal_num" value="$(arg target)" /> 
+  </node>
+
+  <node name="give_goal_r6" pkg="franka_coord" type="give_goal_nr" output="screen">
+    <param name="robot_num" value="$(arg robot_num)" />
+    <param name="robot_id" value="6" />  
+    <param name="speed_factor" value="0.05" /> 
+    
+    <param name="q_goal_num" value="$(arg target)" /> 
+  </node>
+
+  <node name="give_goal_r7" pkg="franka_coord" type="give_goal_nr" output="screen">
+    <param name="robot_num" value="$(arg robot_num)" />
+    <param name="robot_id" value="7" />  
+    <param name="speed_factor" value="0.05" /> 
+    
+    <param name="q_goal_num" value="$(arg target)" /> 
+  </node>
+
+  <node name="give_goal_r8" pkg="franka_coord" type="give_goal_nr" output="screen">
+    <param name="robot_num" value="$(arg robot_num)" />
+    <param name="robot_id" value="8" />  
+    <param name="speed_factor" value="0.05" /> 
+    
+    <param name="q_goal_num" value="$(arg target)" /> 
+  </node>
+
+  <node name="give_goal_r9" pkg="franka_coord" type="give_goal_nr" output="screen">
+    <param name="robot_num" value="$(arg robot_num)" />
+    <param name="robot_id" value="9" />  
+    <param name="speed_factor" value="0.05" /> 
+    
+    <param name="q_goal_num" value="$(arg target)" /> 
+  </node>
+
+  <node name="give_goal_r10" pkg="franka_coord" type="give_goal_nr" output="screen">
+    <param name="robot_num" value="$(arg robot_num)" />
+    <param name="robot_id" value="10" />  
+    <param name="speed_factor" value="0.05" /> 
+    
+    <param name="q_goal_num" value="$(arg target)" /> 
+  </node> -->
+
+
+
+</launch>
