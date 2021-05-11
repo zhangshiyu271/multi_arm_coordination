@@ -1,0 +1,16 @@
+float64[7] qinit1
+float64[7] qinit2
+float64[7] qgoal1
+float64[7] qgoal2
+float64[7] dqinit1
+float64[7] dqinit2
+float64[8] trajpara1
+float64[8] trajpara2
+float64 speedfactor1
+float64 speedfactor2
+---
+bool success
+float64[8] newtrajpara1
+float64[8] newtrajpara2
+float64 slowfactor1
+float64 slowfactor2

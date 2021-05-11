@@ -1,0 +1,4 @@
+int8 robotid
+---
+float64[7] qinit
+float64[7] dqinit

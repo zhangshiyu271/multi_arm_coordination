@@ -1,0 +1,8 @@
+int8 robotid
+float64[7] qinit
+float64[7] qgoal
+float64[7] qgoalt
+float64[7] dqinit
+float64 speedfactor
+float64 slowfactor
+time starttime

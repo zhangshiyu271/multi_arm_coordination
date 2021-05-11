@@ -1,0 +1,20 @@
+int8 robotid1
+int8 robotid2
+float64[7] qgoal1
+float64[7] qgoal2
+float64 qigoal1
+float64 qigoal2
+float64[7] qgoalt1
+float64[7] qgoalt2
+float64 qigoalt1
+float64 qigoalt2
+float64 speedfactor1
+float64 speedfactor2
+float64 delayfactor1
+float64 delayfactor2
+float64 slowfactor1
+float64 slowfactor2
+bool prior1
+bool prior2
+---
+bool received

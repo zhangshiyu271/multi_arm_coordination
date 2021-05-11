@@ -1,0 +1,5 @@
+int8 robotid
+float64[7] qgoal
+float64 speedfactor
+---
+bool received
