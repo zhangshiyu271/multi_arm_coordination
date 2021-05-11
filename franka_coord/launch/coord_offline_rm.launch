@@ -1,0 +1,25 @@
+<launch>
+  <arg name="sample_size_max" default="100" />
+  <arg name="robot_distance" default="0.67" />
+
+
+  <node name="coord_r1_r2" pkg="franka_coord" type="coord_offline_two_rm" respawn="false" output="screen">
+    <param name="sample_size_max" value="$(arg sample_size_max)" /> 
+    <param name="robot_distance" value="$(arg robot_distance)" />  
+    <rosparam param="pair_ir"> [1, 2]</rosparam>
+  </node>
+
+  <!-- 3 robots -->
+  <node name="coord_r1_r3" pkg="franka_coord" type="coord_offline_two_rm" respawn="false" output="screen">
+    <param name="sample_size_max" value="$(arg sample_size_max)" /> 
+    <param name="robot_distance" value="$(arg robot_distance)" />  
+    <rosparam param="pair_ir"> [1, 3]</rosparam>
+  </node>
+
+  <node name="coord_r2_r3" pkg="franka_coord" type="coord_offline_two_rm" respawn="false" output="screen">
+    <param name="sample_size_max" value="$(arg sample_size_max)" /> 
+    <param name="robot_distance" value="$(arg robot_distance)" />  
+    <rosparam param="pair_ir"> [2, 3]</rosparam> 
+  </node>
+
+</launch>
